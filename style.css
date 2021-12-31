@@ -69,3 +69,7 @@ h1.temp{
     display: flex;
     align-items: center;
 }
+
+.weather.loading{
+    visibility: hidden;
+}
