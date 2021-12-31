@@ -17,6 +17,7 @@ let weather = {
         document.querySelector(".humidity").innerText = "humidity: " + humidity + "%";
         document.querySelector(".wind").innerText = "Wind speed: " + speed + " Km/h";
         document.querySelector(".weather").classList.remove("loading");
+        document.body.style.backgroundImage = "url('https://source.unsplash.com/random/1920x1080/?" + name + "')"
     },
     search: function () {
         this.fetchWeather(document.querySelector(".search-bar").value);
@@ -33,4 +34,4 @@ document.querySelector(".search-bar").addEventListener("keyup", function (event)
     }
 });
 
-weather.fetchWeather("Desamparados");
+//weather.fetchWeather("Desamparados");
